@@ -22,6 +22,10 @@ test:
 	@echo "Running tests..."
 	pytest -s
 
+pdf-test:
+	@echo "Running tests..."
+	python3 test_run.py pdf sample.pdf
+
 # Docker 이미지 빌드
 docker-build:
 	@echo "Building Docker image..."
